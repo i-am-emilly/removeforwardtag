@@ -9,8 +9,8 @@
         "Alain"
     ],
     "website": "",
-    "repository": "https://github.com/BotzCity/ChannelFTR/",
-    "success_url": "https://telegram.dog/Alain_xD",
+    "repository": "https://github.com/adarsh-goel/removeforwardtag",
+    "success_url": "https://telegram.me/adarshgoelo5",
     "env": {
         "BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
