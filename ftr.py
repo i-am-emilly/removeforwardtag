@@ -1,10 +1,3 @@
-# Channel Forward Tag Remover - Channel management bot
-# Copyright (C) 2021 @Alain_xD
-#
-# This file is a part of < https://github.com/BotzCity/ChannelFTR/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/BotzCity/ChannelFTR/blob/main/LICENSE/>.
-
 import re, os, random, asyncio, html
 os.system("pip install pyrogram")
 import pyrogram
