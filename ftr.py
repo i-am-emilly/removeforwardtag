@@ -21,7 +21,7 @@ async def start(lel, message):
 
 @app.on_message(filters.command(["help"]))
 async def help(ha, message):
-    await app.send_message(message.chat.id, """**There is nothing no more..!\nJust add me to your channel give rights to delete message and post messages and whichever forwarded message received I will send again without forward tag.\n\nMade with ❤️ by @adarshgoelo5**""", reply_markup=butt) 
+    await app.send_message(message.chat.id, """**There is nothing here ..!\nJust add me to your channel give rights to delete message and post messages and whichever forwarded message received I will send again without forward tag.\n\nMade with ❤️ by @adarshgoelo5**""", reply_markup=butt) 
 
 @app.on_callback_query()
 async def button(app, update):
