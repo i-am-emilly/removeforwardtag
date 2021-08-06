@@ -13,16 +13,16 @@
     "success_url": "https://telegram.me/adarshgoelo5",
     "env": {
         "BOT_TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
-            "value": "1907966474:AAEUGl5ijWYMerwk0iLbbtNpvNl6770kwV4"
+            "description": "Your Telegram Bot Token from @BotFather",
+            "value": "ENTER THE TOKEN HERE"
         },
         "API_HASH": {
             "description": "Your API Hash from my.telegram.org",
-            "value": "401f66ed51a03e2eeabb7f14d9d04b0d"
+            "value": "ENTER API HASH HERE"
         },
         "APP_ID": {
             "description": "Your API ID from my.telegram.org",
-            "value": "6277451"
+            "value": "ENTER API ID HERE"
         }
     },
     "addons": [],
