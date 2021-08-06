@@ -11,17 +11,17 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
-but = InlineKeyboardMarkup([[InlineKeyboardButton("Help 🤔", callback_data="Help"), InlineKeyboardButton("Close 🔐", callback_data="close")],[InlineKeyboardButton("owner ⬆", url="t.me/adarshgoelo5"), InlineKeyboardButton("Developer 💕", url="t.me/adarshgoelo5")]])
-butt = InlineKeyboardMarkup([[InlineKeyboardButton("Home 🏠", callback_data="home"), InlineKeyboardButton("contact owner⬆",url="t.me/adarshgoelo5")], [InlineKeyboardButton("Repo 👉", url="https://github.com/adarsh-goel/removeforwardtag"), InlineKeyboardButton("Close 🔐", callback_data="close")]])
+botmaker = InlineKeyboardMarkup([[InlineKeyboardButton("Help 🤔", callback_data="Help"), InlineKeyboardButton("Close 🔐", callback_data="close")],[InlineKeyboardButton("owner ⬆", url="t.me/adarshgoelo5"), InlineKeyboardButton("Developer 💕", url="t.me/adarshgoelo5")]])
+adarsh = InlineKeyboardMarkup([[InlineKeyboardButton("Home 🏠", callback_data="home"), InlineKeyboardButton("contact owner⬆",url="t.me/adarshgoelo5")], [InlineKeyboardButton("Repo 👉", url="https://github.com/adarsh-goel/removeforwardtag"), InlineKeyboardButton("Close 🔐", callback_data="close")]])
 
 
 @app.on_message(filters.command(["start"]))
 async def start(lel, message):
-    await message.reply_text(f"**Hi** `{message.from_user.first_name}` **!\n\nI'm Channel forward tag remover! I can send the file // messages which is forwarded in your channel without forward tag.🤩..!**", reply_markup=but)
+    await message.reply_text(f"**Hi** `{message.from_user.first_name}` **!\n\nI'm Channel forward tag remover! I can send the file // messages which is forwarded in your channel without forward tag.🤩..!**", reply_markup=botmaker)
 
 @app.on_message(filters.command(["help"]))
 async def help(ha, message):
-    await app.send_message(message.chat.id, """**There is nothing here ..!\nJust add me to your channel give rights to delete message and post messages and whichever forwarded message received I will send again without forward tag.\n\nMade with ❤️ by @adarshgoelo5**""", reply_markup=butt) 
+    await app.send_message(message.chat.id, """**There is nothing here ..!\nJust add me to your channel give rights to delete message and post messages and whenever I will recieve a forwarded message  I will send again without forward tag.\n\nMade with ❤️ by @adarshgoelo5**""", reply_markup=adarsh) 
 
 @app.on_callback_query()
 async def button(app, update):
