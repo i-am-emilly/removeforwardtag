@@ -18,8 +18,8 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
-but = InlineKeyboardMarkup([[InlineKeyboardButton("Help 🤔", callback_data="Help"), InlineKeyboardButton("Close 🔐", callback_data="close")],[InlineKeyboardButton("Updates ⬆", url="t.me/BotzCity"), InlineKeyboardButton("Developer 💕", url="t.me/Alain_xD")]])
-butt = InlineKeyboardMarkup([[InlineKeyboardButton("Home 🏠", callback_data="home"), InlineKeyboardButton("Updates ⬆", url="t.me/BotzCity")], [InlineKeyboardButton("Repo 👉", url="GitHub.com/BotzCity/ChannelFTR"), InlineKeyboardButton("Close 🔐", callback_data="close")]])
+but = InlineKeyboardMarkup([[InlineKeyboardButton("Help 🤔", callback_data="Help"), InlineKeyboardButton("Close 🔐", callback_data="close")],[InlineKeyboardButton("owner ⬆", url="t.me/adarshgoelo5"), InlineKeyboardButton("Developer 💕", url="t.me/Alain_xD")]])
+butt = InlineKeyboardMarkup([[InlineKeyboardButton("Home 🏠", callback_data="home"), InlineKeyboardButton("contact owner⬆",url="t.me/adarshgoelo55")], [InlineKeyboardButton("Repo 👉", url="https://github.com/adarsh-goel/removeforwardtag"), InlineKeyboardButton("Close 🔐", callback_data="close")]])
 
 
 @app.on_message(filters.command(["start"]))
@@ -28,7 +28,7 @@ async def start(lel, message):
 
 @app.on_message(filters.command(["help"]))
 async def help(ha, message):
-    await app.send_message(message.chat.id, """**There is nothing no more..!\nJust add me to your channel give rights to delete message and post messages and whichever forwarded message received I will send again without forward tag.\n\nMade with ❤️ by @BotzCity**""", reply_markup=butt) 
+    await app.send_message(message.chat.id, """**There is nothing no more..!\nJust add me to your channel give rights to delete message and post messages and whichever forwarded message received I will send again without forward tag.\n\nMade with ❤️ by @adarshgoelo5**""", reply_markup=butt) 
 
 @app.on_callback_query()
 async def button(app, update):
@@ -55,5 +55,5 @@ async def copy(sed, message):
 
 
 print("Started bot...! ") 
-print("Join @BotzCity for any help !")
+print("contact @adarshgoelo5 for any help !")
 app.run()
