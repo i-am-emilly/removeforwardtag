@@ -46,7 +46,7 @@ async def copy(sed, message):
        await message.reply(lel)
        return
     
-    @app.on_message(filters.group & filters.forwarded)
+@app.on_message(filters.group & filters.forwarded)
 async def copy(sed, message):
     try:
        
