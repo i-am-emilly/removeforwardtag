@@ -57,6 +57,17 @@ async def copy(sed, message):
     except RPCError as lel:
        await message.reply(lel)
        return
+ 
+@app.on_message(filters.private & filters.forwarded)
+async def copy(sed, message):
+    try:
+       
+       sed = await message.copy(message.chat.id)
+       
+       await message.delete()
+    except RPCError as lel:
+       await message.reply(lel)
+       return
 
 
 print("Started bot...! ") 
