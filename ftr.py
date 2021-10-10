@@ -1,4 +1,5 @@
 import re, os, random, asyncio, html
+os.system("-m pip install --upgrade pip")
 os.system("pip install pyrogram")
 import pyrogram
 from pyrogram.errors import RPCError
